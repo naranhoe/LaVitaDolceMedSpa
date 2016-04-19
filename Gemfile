@@ -22,6 +22,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'pg', '~> 0.18.4'
+gem 'rails_12factor', group: :production
+gem 'modernizr-rails'
+gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

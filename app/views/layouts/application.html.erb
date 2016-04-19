@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
-  <title>Lavitadolce</title>
+  <title>La Dolce Vita | Med Spa</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
+
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Onepage Multipurpose Bootstrap HTML Template">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="<%= asset_path('bootstrap.css') %>">
+  <link rel="stylesheet" href="<%= asset_path('font-awesome.css') %>">
+  <link rel="stylesheet" href="<%= asset_path('animate.css') %>">
+  <link rel="stylesheet" href="<%= asset_path('theme.css') %>">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
 <%= yield %>
+
+<!--Javascripts-->
+<script src="<%= asset_path('jquery.js') %>"></script>
+<script src="<%= asset_path('modernizr.js') %>"></script>
+<script src="<%= asset_path('bootstrap.js') %>"></script>
+<script src="<%= asset_path('menustick.js') %>"></script>
+<script src="<%= asset_path('parallax.js') %>"></script>
+<script src="<%= asset_path('easing.js') %>"></script>
+<script src="<%= asset_path('wow.js') %>"></script>
+<script src="<%= asset_path('smoothscroll.js') %>"></script>
+<script src="<%= asset_path('masonry.js') %>"></script>
+<script src="<%= asset_path('imgloaded.js') %>"></script>
+<script src="<%= asset_path('classie.js') %>"></script>
+<script src="<%= asset_path('colorfinder.js') %>"></script>
+<script src="<%= asset_path('gridscroll.js') %>"></script>
+<script src="<%= asset_path('contact.js') %>"></script>
+<script src="<%= asset_path('common.js') %>"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'specialties',
+		  3: 'gallery',
+		  4: 'feedback',
+		  5: 'contact'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+});
+</script>
 
 </body>
 </html>
